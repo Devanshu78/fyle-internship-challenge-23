@@ -12,7 +12,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class ApiService {
   constructor(private httpClient: HttpClient) {}
-  private authToken = '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';
+  private authToken = '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';
 
   getUser(githubUsername: string) {
     return this.httpClient
