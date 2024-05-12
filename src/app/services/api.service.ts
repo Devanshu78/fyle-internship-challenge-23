@@ -6,13 +6,14 @@ import {
 import { Injectable } from '@angular/core';
 import { throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { environment } from '../../environments/environment.development';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ApiService {
   constructor(private httpClient: HttpClient) {}
-  private authToken = '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';
+  private authToken = environment.AccessToken;
 
   getUser(githubUsername: string) {
     return this.httpClient
