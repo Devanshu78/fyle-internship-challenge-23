@@ -1,3 +1,3 @@
 export const environment = {
-  AccessToken: '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',
+  AccessToken: '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',
 };
